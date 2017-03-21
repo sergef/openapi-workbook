@@ -1,0 +1,13 @@
+---
+extends:
+  - walmart/configurations/es6-node
+rules:
+  quotes: [2, single, avoid-escape]
+  no-console: 0
+  max-len: [2, 150]
+  max-statements: [2, 30]
+  indent: [2, 2, {"SwitchCase": 1}]
+env:
+  node: true
+  mocha: true
+  jasmine: true
