@@ -2,7 +2,6 @@
 'use strict';
 
 const program = require('commander');
-const chalk = require('chalk');
 const tool = require('../');
 
 program
@@ -25,6 +24,7 @@ program
   .option('-r, --resource <resource>', 'path to the resource')
   .option('-p, --parameter <parameter>', 'name of the parameter to use, defaults to "body"')
   .option('-s, --spreadsheet <spreadsheet>', 'name of the spreadsheet to import data from')
+  .option('-l, --limit <limit>', 'the maximum number of async operations at a time')
   .action((spec, filename, options) => {
     tool.import(spec, filename, options);
   });
