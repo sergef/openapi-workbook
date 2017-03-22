@@ -37,6 +37,7 @@ Example:
     -r, --resource <resource>        path to the resource
     -p, --parameter <parameter>      name of the parameter to use, defaults to "body"
     -s, --spreadsheet <spreadsheet>  name of the spreadsheet to import data from
+    -l, --limit <limit>              the maximum number of async operations at a time
 ```
 
 Example:
